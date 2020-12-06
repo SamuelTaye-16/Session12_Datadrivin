@@ -32,7 +32,7 @@ public class AddCustomerPage extends BasePage {
 		@FindBy(how =How.XPATH,using = "//*[@id=\"submit\"]") WebElement SAVE_BUTTON_LOCATOR;
 		@FindBy(how =How.XPATH,using = "//*[@id='summary']") WebElement SUMMARY_BUTTON_LOCATOR;
 
-		//@FindBy(how =How.XPATH,using = "//*[@id=\"side-menu\"]/li[3]/ul/li[2]/a") WebElement LIST_CUSTOMER_LOCATOR;
+		@FindBy(how =How.XPATH,using = "//*[@id=\"side-menu\"]/li[3]/ul/li[2]/a") WebElement LIST_CUSTOMER_LOCATOR;
 
 
 
@@ -82,14 +82,15 @@ public class AddCustomerPage extends BasePage {
 			ZIP_FIELD_LOCATOR.sendKeys(Zip);
 		}
 		
-		public void clickSaveButton() {
+		public void clickSaveButton() throws InterruptedException {
 			SAVE_BUTTON_LOCATOR.click();
+			Thread.sleep(3000);
 		}
 		
-		 // public void clickOnListCustomerButton() { 
-			//  LIST_CUSTOMER_LOCATOR.click();
+		 public void clickOnListCustomerButton() { 
+			 LIST_CUSTOMER_LOCATOR.click();
 		  
-		 // }
+		  }
 		  
 		  public void summary() {
 			  SUMMARY_BUTTON_LOCATOR.click();

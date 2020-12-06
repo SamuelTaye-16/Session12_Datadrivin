@@ -37,8 +37,8 @@ public class AddCustomerTest {
 		loginpage.enterPassword(Password);
 		loginpage.clickSignInButton();
 
-		DashBoardPage dashboard = PageFactory.initElements(driver, DashBoardPage.class);
-		dashboard.validatDashBoardElement();
+		//DashBoardPage dashboard = PageFactory.initElements(driver, DashBoardPage.class);
+		//dashboard.validatDashBoardElement();
 
 		AddCustomerPage addCustomer = PageFactory.initElements(driver, AddCustomerPage.class);
 		addCustomer.clickCustomersButton();
@@ -52,7 +52,7 @@ public class AddCustomerTest {
 		addCustomer.insertState(State);
 		addCustomer.insertZip(Zip);
 		addCustomer.clickSaveButton();
-		// addCustomer.clickOnListCustomerButton();
+		addCustomer.clickOnListCustomerButton();
 
 	}
 

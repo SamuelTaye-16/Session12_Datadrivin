@@ -19,15 +19,18 @@ public class DashBoardPage {
 			
 		}
 		
-		@FindBy(how =How.XPATH,using = "//*[@id=\"page-wrapper\"]/div[2]/div/h2") WebElement DASHBOARD_ELEMENT_LOCATOR;
+		//@FindBy(how =How.XPATH,using = "//*[@id=\"page-wrapper\"]/div[2]/div/h2") WebElement DASHBOARD_ELEMENT_LOCATOR;
 		
 		
 		
 		
 		
-		public void validatDashBoardElement() {
-		Assert.assertEquals(DASHBOARD_ELEMENT_LOCATOR.getText(), "Dashboard", "WRONG PAGE!");	
-			
-		}
+		/*
+		 * public void validatDashBoardElement() {
+		 * Assert.assertEquals(DASHBOARD_ELEMENT_LOCATOR.getText(), "Dashboard",
+		 * "WRONG PAGE!");
+		 * 
+		 * }
+		 */
 
 }

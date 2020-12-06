@@ -30,8 +30,8 @@ public class LoginTest {
 		  loginpage.clickSignInButton();
 		  
 		  
-		  DashBoardPage dashboard = PageFactory.initElements(driver, DashBoardPage.class);
-		  dashboard.validatDashBoardElement();
+		  //DashBoardPage dashboard = PageFactory.initElements(driver, DashBoardPage.class);
+		  //dashboard.validatDashBoardElement();
 		  
 		 
 		 
